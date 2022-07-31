@@ -11,6 +11,14 @@ class regular_expressions:
   def isMatch(regex: str, string: str) -> bool:
     return bool(re.search(regex, string))
 
+class string_manipulation:
+  def stringBetween():
+    x = "/watch?v=kTh0forT2Sg&list=PLw2faK8_QKfmSs0Xp8ycOXgZSXzM0pLWK&index=1"
+    start = 'asdf=5;'
+    end = '123jasd'
+    s = 'asdf=5;iwantthis123jasd'
+    str_between = lambda s, a, z: s[s.find(a)+len(a):s.rfind(z)]
+    print(str_between(x, "watch?v=", "&list="))
   
 def reading_file(directory):
   with open(directory) as f:
