@@ -7,7 +7,9 @@ class regular_expressions:
   alpha_uppercase = r'[A-Z]'
   allalpha_and_digits = r'\w'
   function = {"re.escape": "Use to escape all characters"}
-  
+  def __init__():
+    defs = {
+      "re.escape", "to match literal counterpart of the string"}
   def isMatch(regex: str, string: str) -> bool:
     return bool(re.search(regex, string))
 
