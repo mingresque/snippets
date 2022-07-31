@@ -1,0 +1,13 @@
+class YouTube:
+    def getPageSource(site: str) -> str:
+        # from selenium import webdriver
+        # from webdriver_manager.chrome import ChromeDriverManager
+        # from selenium.webdriver.chrome.service import Service
+        # from selenium.webdriver.chrome.options import Options
+        options = Options()
+        options.headless = True
+        driver = webdriver.Chrome(options=options, service=Service(ChromeDriverManager().install()))
+        driver.get(site)
+        page = driver.page_source
+        driver.close()
+        return page
