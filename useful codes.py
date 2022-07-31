@@ -16,3 +16,15 @@ def reading_file(directory):
   with open(directory) as f:
     text = f.read()
     
+
+class using_json:
+   def reading():
+      pass
+
+
+def multithreading():
+  # import threading
+  def function_name(argument):
+    print(argument)
+  t1 = threading.Thread(target=function_name, args='argument')
+  t1.start()
