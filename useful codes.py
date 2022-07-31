@@ -1,3 +1,15 @@
+class pyautogui_examples:
+  def windows():
+    # import win32gui
+    hwnd = win32gui.GetForegroundWindow()  # active window
+    bbox = win32gui.GetWindowRect(hwnd)  # bounding rectangle
+    # add here how to get title
+  def adding_hotkeys:
+    # import keyboard
+    functionName = lambda: print("Example")
+    hotkey = 'ctrl+shift+q' 
+    keyboard.add_hotkey(hotkey, functionName)
+
 class regular_expressions:
   space_vertical = r'\n\v\f\r\u2028\u2029'
   space_horizontal = ''
