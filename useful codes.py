@@ -10,6 +10,13 @@ class pyautogui_examples:
     hotkey = 'ctrl+shift+q' 
     keyboard.add_hotkey(hotkey, functionName)
 
+    
+def handlingException():
+  try:
+    pass
+  except Exception as e:
+    print("Capture error:" e)
+  
 class regular_expressions:
   space_vertical = r'\n\v\f\r\u2028\u2029'
   space_horizontal = ''
