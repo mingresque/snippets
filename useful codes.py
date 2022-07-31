@@ -18,9 +18,13 @@ def reading_file(directory):
     
 
 class using_json:
-   def reading():
-      pass
-
+  filename = "student.json"
+   def opening():
+      with open(filename,'w') as f:
+        json.dump(var, f, indent =4)
+   def saving():
+      with open(filename) as f:
+        return json.load(f)    
 
 def multithreading():
   # import threading
